@@ -3,3 +3,4 @@ Using:
 1. Async Functions
 2. Await Operator
 3. Cors Responses (Which is converted to .json in index.js)
+4. Tailwind (to embed css into html)
