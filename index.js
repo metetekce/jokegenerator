@@ -1,7 +1,7 @@
 const text = document.querySelector("#text");
 const button = document.querySelector("#btn");
+
 const image = document.getElementById("content");
-// !!!
 const imageButton = document.getElementById("imgbtn");
 // picking up the relevant html elements and assigning them into variables.
 
@@ -15,10 +15,9 @@ async function getRandomJoke() {
   });
   let joke = await response.json();
   // fetching data from the url and assigning it to the response variable.
-
-  //   text.innerHTML = joke.joke; !!!!
+  
   text.textContent = joke.joke;
-  // replacing the content by dom manipulation.
+  // replacing the content by DOM manipulation.
 }
 
 async function getRandomImageJoke() {
@@ -30,3 +29,4 @@ async function getRandomImageJoke() {
   // replacing the image source url with the specific joke id.
 }
 getRandomImageJoke();
+// recalling the image function to have an initial joke on.
